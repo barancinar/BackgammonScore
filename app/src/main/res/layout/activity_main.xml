@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".MainActivity" >
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="409dp"
+        android:layout_height="60dp"
+        android:background="#6E8480"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="20dp"
+            android:text="@string/title1_text"
+            android:textColor="@color/black"
+            android:textSize="@dimen/Tsize_medium" />
+    </com.google.android.material.navigation.NavigationView>
+
+    <ImageView
+        android:id="@+id/tavlaView"
+        android:layout_width="0dp"
+        android:layout_height="280dp"
+        android:layout_marginTop="60dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/navigationView"
+        app:srcCompat="@drawable/tavla" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="350dp"
+        android:orientation="vertical"
+        android:padding="@dimen/size_small"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+        <TextView
+            android:id="@+id/oyunAnlat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/oyun_anlat_text"
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvOyuncu1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/size_small"
+                android:text="@string/oyuncu1_text"
+                android:textColor="@color/black"
+                android:textSize="@dimen/Tsize_small" />
+
+            <EditText
+                android:id="@+id/etOyuncu1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/oyuncu1Hint_text"
+                android:inputType="text" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvOyuncu2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/size_small"
+                android:text="@string/oyuncu2_text"
+                android:textColor="@color/black"
+                android:textSize="@dimen/Tsize_small" />
+
+            <EditText
+                android:id="@+id/etOyuncu2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/oyuncu2Hint_text"
+                android:inputType="text" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnNewGame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/darkBackColor"
+            android:textSize="@dimen/Tsize_small"
+            android:text="@string/btn_newGame" />
+
+        <TextView
+            android:id="@+id/tvSkor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/size_small"
+            android:textSize="@dimen/Tsize_large"
+            android:textColor="@color/black"
+            android:text="" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/size_xsmall"
+                android:layout_weight="1"
+                android:textSize="@dimen/Tsize_small"
+                android:backgroundTint="@color/darkBackColor"
+                android:enabled="false" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/size_xsmall"
+                android:layout_weight="1"
+                android:textSize="@dimen/Tsize_small"
+                android:backgroundTint="@color/darkBackColor"
+                android:enabled="false" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

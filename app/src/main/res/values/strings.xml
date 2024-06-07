@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">quiz1</string>
+    <string name="title1_text"><b>Tavla Skoru</b></string>
+    <string name="oyun_anlat_text">
+        <b>İKİ OYUNCU</b> tavla oynarken, artık skor bir problem olmaktan çıkacaktır. Bu uygulama skoru <u>güvenli</u> bir şekilde saklamaktadır.
+    </string>
+    <string name="oyuncu1_text">Oyuncu 1</string>
+    <string name="oyuncu2_text">Oyuncu 2</string>
+    <string name="oyuncu1Hint_text">Oyuncu 1 Adı</string>
+    <string name="oyuncu2Hint_text">Oyuncu 2 Adı</string>
+    <string name="btn_newGame">YENİ OYUNA BAŞLA</string>
+
+    <string name="title2_text"><b>Sonuç</b></string>
+    <string name="galip_text">Bu Oyunun Galibidir</string>
+    <string name="btn_try_text">TEKRAR BAŞLA</string>
+</resources>

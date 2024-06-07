@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="size_xsmall">8dp</dimen>
+    <dimen name="size_small">16dp</dimen>
+    <dimen name="size_medium">24dp</dimen>
+    <dimen name="size_large">42dp</dimen>
+    <dimen name="size_xlarge">58dp</dimen>
+
+    <dimen name="Tsize_xsmall">8sp</dimen>
+    <dimen name="Tsize_small">16sp</dimen>
+    <dimen name="Tsize_medium">24sp</dimen>
+    <dimen name="Tsize_large">42sp</dimen>
+    <dimen name="Tsize_xlarge">58sp</dimen>
+</resources>
